@@ -18,6 +18,7 @@
         Concatenar string es conectar una cadena de string con otra para que se puedan leer como una sola linea
     * Cual es el operador que me permite sumar o concatenar?
         El operador es +
+
 2. Determine el nombre y tipo de dato para almacenar en variable la siguietne informacion:
     * Nombre
         Seria tipo String en este caso con el valor "Antony"
@@ -203,13 +204,15 @@
         ```
 3. Escribe un codigo en JavaScript que le pregunte a los usuarios cuanto es 2 + 2. Si responden bien mostramos un mensaje de felicitaciones, pero si reponden mal, volvemos a empezar
     ```javascript
-    constpregunta = prompt('¿Cuánto es 2 + 2?');
-    constrespuesta = parseInt(pregunta);
-
-    if(respuesta!= 4){
-        alert('Sigue intentando');
-    } else {
-        alert("Felicidades");
+    let respuesta
+    while (respuesta != 4) {
+        let pregunta = prompt('Cuanto es 2 + 2');
+        respuesta = pregunta
+        if(pregunta != 4){
+            alert("sigue intentado")
+        }else{
+            alert("Felicidades")
+        }
     }
     ```
 ## Lista
