@@ -202,3 +202,55 @@
         }
         ```
 3. Escribe un codigo en JavaScript que le pregunte a los usuarios cuanto es 2 + 2. Si responden bien mostramos un mensaje de felicitaciones, pero si reponden mal, volvemos a empezar
+    ```javascript
+    constpregunta = prompt('¿Cuánto es 2 + 2?');
+    constrespuesta = parseInt(pregunta);
+
+    if(respuesta!= 4){
+        alert('Sigue intentando');
+    } else {
+        alert("Felicidades");
+    }
+    ```
+## Lista
+1. Responde las siguientes preguntas:
+    * Que es un array?
+        Es una lista que puede contener objetos, numeros, string
+    * Que es un objeto?
+        Segun ella, yo :(
+    * Cuando es mejor usar objetos o arrays?
+        cuando se necesita iterar o agrupar una serie de valores
+    * Puedo mezclar arrays con objetos o incluso objetos con arrays?
+        Claro ya que se pueden sacar diferentes funcionalidades al momento de juntar
+2. Cre una funcion que pueda recibir cualquier array como parametro e imprima su primer elemento:
+    ```javascript
+    const array = ["Antony", "jose", "Dean", "Luis", "Robertho"]
+    function primerElement(array){
+        return array[0]
+    }
+    console.log(primerElement(array))
+    ```
+3. Crea una funcion que pueda recibir cualquier array como parametro e imprima todos sus elementos uno por uno:
+    ```javascript
+    const array = ["Antony", "jose", "Dean", "Luis", "Robertho"]
+    function primerElement(array){
+        array.map(k => console.log(k))
+    }
+    primerElement(array)
+    ```
+4. Crea una funcion que pueda recibir cualquier objeto como parametro e imprima todos sus elementos uno por uno:
+    ```javascript
+    const obj = {
+    name1: "antony",
+    name2: "jose",
+    name3: "dean",
+    name4: "luis",
+    name5: "robertho",
+    }
+    function primerElement(obejeto){
+        Object.entries(obejeto).map(([key, value]) => {
+            console.log(value)
+        })
+    }
+    primerElement(obj)
+    ```
